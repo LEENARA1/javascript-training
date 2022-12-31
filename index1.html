@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+
+    <div class="black-bg">
+        <div class="white-bg">
+        <h4>로그인하세요</h4>
+        <form>
+            <div class="my-3">
+                <input type="text" class="form-control" id="input1">
+            </div>
+        </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+<script>
+        
+        
+        document.getElementById('input1').addEventListener('change', function(){
+
+            var p1 = document.getElementById('input1').value;
+
+            if(p1 % 9 == 0) {
+                alert("박수x2");
+            } else if (p1 % 3 == 0){
+                alert("박수");
+            } else {
+                alert("통과");
+            }
+        });
+
+        function 합격했냐(num, num1){
+            if (num >100 || num1 > 100){
+                console.log('0~100사이의 정수로 입력하세요');
+            } else if(num <= 40 || num1 <= 40) {
+                console.log('불합격');
+            } else if (num+num1 >= 120) {
+                console.log('합격');
+            } else if (num+num1 < 120) {
+                console.log('불합격');
+            } 
+        }
+        
+
+        function 삼육구게임(num) {
+            if(num % 10 == 3 || num % 10 == 6 || num % 10 == 9) {
+                console.log('박수');
+            }else {
+                console.log('통과');
+            }
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+</html>
